@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
-    <!-- Link your CSS file -->
+    <!-- Link to the global CSS file -->
     <link rel="stylesheet" href="{{ site.baseurl }}/css/index.css">
+    <!-- Conditionally load interests.css for Interests page -->
+    {% if page.title == "Interests" %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/interests.css">
+    {% endif %}
 </head>
 
-<!-- Adding a dynamic class for each page -->
 <body class="page-{{ page.title | downcase }}">
     <!-- Header Section -->
     <header>
         <h1>{{ site.title }}</h1>
         <p>{{ site.description }}</p>
-        <!-- Example navigation menu -->
         <nav>
             <ul>
                 <li><a href="{{ site.baseurl }}/">Home</a></li>
