@@ -1,0 +1,32 @@
+.links-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.link-image {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.link-image:hover {
+    transform: scale(1.1);
+    border-color: #333;
+}
+
+.links-row a {
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+}
+
+.links-row p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
