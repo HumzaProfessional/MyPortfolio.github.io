@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
-    <!-- Link to your CSS file using the raw URL -->
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/HumzaProfessional/MyPortfolio.github.io/main/css/index.css">
+    <!-- Link your CSS file -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/index.css">
 </head>
-<body>
+
+<!-- Adding a dynamic class for each page -->
+<body class="page-{{ page.title | downcase }}">
     <!-- Header Section -->
     <header>
         <h1>{{ site.title }}</h1>
         <p>{{ site.description }}</p>
+        <!-- Example navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/projects/">Projects</a></li>
+                <li><a href="{{ site.baseurl }}/interests/">Interests</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Content Section -->
