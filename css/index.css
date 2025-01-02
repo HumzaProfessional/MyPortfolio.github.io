@@ -1,3 +1,13 @@
+.page-home {
+    background: url('https://raw.githubusercontent.com/HumzaProfessional/MyPortfolio.github.io/main/Images/colorful_cubes.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Optional: Makes text readable */
+    min-height: 100vh; /* Ensures the background covers the viewport */
+    margin: 0;
+    padding: 20px; /* Adds some space for content */
+}
+
+
 .links-row {
     display: flex;
     justify-content: center;
