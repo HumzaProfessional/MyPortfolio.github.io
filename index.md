@@ -11,9 +11,9 @@ Explore my website by clicking on the images below.
 <a href="{{ site.baseurl }}/projects/">
     <img src="https://raw.githubusercontent.com/HumzaProfessional/MyPortfolio.github.io/main/Images/electronic.jpeg" alt="Projects" class="link-image">
     <p>Projects</p>
-  </a>
+  <!-- Interests Link -->
   <a href="{{ site.baseurl }}/interests/">
-    <img src="{{ site.baseurl }}/assets/images/interests.jpg" alt="Interests" class="link-image">
+    <img src="{{ site.baseurl }}/Images/cubes.jpeg" alt="Interests" class="link-image">
     <p>Interests</p>
   </a>
 </div>
